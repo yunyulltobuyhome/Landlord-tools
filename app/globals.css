@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #faf6ee;
+    color: #1f2318;
+  }
+}
+
+.paper-texture {
+  background-image: radial-gradient(rgba(31, 35, 24, 0.06) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.underline-squiggle {
+  text-decoration: underline;
+  text-decoration-color: #c08a2e;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+}
+
+.card-flat {
+  border: 2px solid #1f2318;
+  box-shadow: 4px 4px 0 0 rgba(31, 35, 24, 0.9);
+}
