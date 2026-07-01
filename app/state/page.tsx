@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function StateIndexPage() {
   return (
     <div className="mx-auto max-w-5xl px-5 py-10">
-      <p className="font-sans text-xs font-bold uppercase tracking-widest text-clay">
+      <p className="font-sans text-xs font-bold uppercase tracking-widest text-moss">
         Reference
       </p>
       <h1 className="mt-2 font-serif text-4xl font-bold sm:text-5xl">
@@ -28,7 +28,7 @@ export default function StateIndexPage() {
           <Link
             key={s.slug}
             href={`/state/${s.slug}`}
-            className="card-flat flex items-center justify-between bg-white px-4 py-3 font-sans text-sm font-medium hover:bg-sand"
+            className="card-flat flex items-center justify-between rounded-xl bg-white px-4 py-3 font-sans text-sm font-medium text-ink transition-colors hover:border-moss hover:text-moss"
           >
             {s.name}
             <span className="text-ink/40">{s.abbr}</span>

@@ -168,7 +168,7 @@ export default function DeductionLetter() {
   return (
     <div className="grid gap-8 lg:grid-cols-5">
       <div className="lg:col-span-3 space-y-6">
-        <div className="card-flat bg-white p-5">
+        <div className="card-flat rounded-2xl bg-white p-5">
           <p className="font-sans text-xs font-bold uppercase tracking-widest text-moss">
             Parties
           </p>
@@ -180,7 +180,7 @@ export default function DeductionLetter() {
               <input
                 value={landlordName}
                 onChange={(e) => setLandlordName(e.target.value)}
-                className="mt-1 w-full rounded-none border-2 border-ink px-3 py-2 font-sans text-sm"
+                className="mt-1 w-full input-field bg-white px-3 py-2 font-sans text-sm"
               />
             </div>
             <div>
@@ -190,7 +190,7 @@ export default function DeductionLetter() {
               <input
                 value={landlordAddress}
                 onChange={(e) => setLandlordAddress(e.target.value)}
-                className="mt-1 w-full rounded-none border-2 border-ink px-3 py-2 font-sans text-sm"
+                className="mt-1 w-full input-field bg-white px-3 py-2 font-sans text-sm"
               />
             </div>
             <div>
@@ -200,7 +200,7 @@ export default function DeductionLetter() {
               <input
                 value={tenantName}
                 onChange={(e) => setTenantName(e.target.value)}
-                className="mt-1 w-full rounded-none border-2 border-ink px-3 py-2 font-sans text-sm"
+                className="mt-1 w-full input-field bg-white px-3 py-2 font-sans text-sm"
               />
             </div>
             <div>
@@ -210,13 +210,13 @@ export default function DeductionLetter() {
               <input
                 value={propertyAddress}
                 onChange={(e) => setPropertyAddress(e.target.value)}
-                className="mt-1 w-full rounded-none border-2 border-ink px-3 py-2 font-sans text-sm"
+                className="mt-1 w-full input-field bg-white px-3 py-2 font-sans text-sm"
               />
             </div>
           </div>
         </div>
 
-        <div className="card-flat bg-white p-5">
+        <div className="card-flat rounded-2xl bg-white p-5">
           <p className="font-sans text-xs font-bold uppercase tracking-widest text-moss">
             Details
           </p>
@@ -228,7 +228,7 @@ export default function DeductionLetter() {
               <select
                 value={stateSlug}
                 onChange={(e) => setStateSlug(e.target.value)}
-                className="mt-1 w-full rounded-none border-2 border-ink bg-white px-3 py-2 font-sans text-sm"
+                className="mt-1 w-full input-field bg-white px-3 py-2 font-sans text-sm"
               >
                 {statesData.map((s) => (
                   <option key={s.slug} value={s.slug}>
@@ -245,7 +245,7 @@ export default function DeductionLetter() {
                 type="date"
                 value={moveOutDate}
                 onChange={(e) => setMoveOutDate(e.target.value)}
-                className="mt-1 w-full rounded-none border-2 border-ink px-3 py-2 font-sans text-sm"
+                className="mt-1 w-full input-field bg-white px-3 py-2 font-sans text-sm"
               />
             </div>
             <div>
@@ -257,13 +257,13 @@ export default function DeductionLetter() {
                 inputMode="decimal"
                 value={depositAmount}
                 onChange={(e) => setDepositAmount(e.target.value)}
-                className="mt-1 w-full rounded-none border-2 border-ink px-3 py-2 font-sans text-sm"
+                className="mt-1 w-full input-field bg-white px-3 py-2 font-sans text-sm"
               />
             </div>
           </div>
         </div>
 
-        <div className="card-flat bg-white p-5">
+        <div className="card-flat rounded-2xl bg-white p-5">
           <div className="flex items-center justify-between">
             <p className="font-sans text-xs font-bold uppercase tracking-widest text-moss">
               Deductions
@@ -271,7 +271,7 @@ export default function DeductionLetter() {
             <button
               type="button"
               onClick={addLine}
-              className="font-sans text-sm font-semibold text-clay hover:underline"
+              className="font-sans text-sm font-semibold text-moss hover:underline"
             >
               + Add line
             </button>
@@ -283,7 +283,7 @@ export default function DeductionLetter() {
                   value={l.label}
                   onChange={(e) => updateLine(l.id, "label", e.target.value)}
                   placeholder="e.g. Replace broken blinds"
-                  className="flex-1 rounded-none border-2 border-ink px-3 py-2 font-sans text-sm"
+                  className="flex-1 input-field bg-white px-3 py-2 font-sans text-sm"
                 />
                 <input
                   type="number"
@@ -291,13 +291,13 @@ export default function DeductionLetter() {
                   value={l.amount}
                   onChange={(e) => updateLine(l.id, "amount", e.target.value)}
                   placeholder="0.00"
-                  className="w-28 rounded-none border-2 border-ink px-3 py-2 font-sans text-sm"
+                  className="w-28 input-field bg-white px-3 py-2 font-sans text-sm"
                 />
                 <button
                   type="button"
                   onClick={() => removeLine(l.id)}
                   aria-label="Remove line"
-                  className="w-9 shrink-0 border-2 border-ink font-sans text-lg text-ink/60 hover:bg-sand"
+                  className="w-9 shrink-0 rounded-lg border border-line font-sans text-lg text-ink/40 transition-colors hover:border-clay hover:text-clay"
                 >
                   ×
                 </button>
@@ -308,7 +308,7 @@ export default function DeductionLetter() {
       </div>
 
       <div className="lg:col-span-2">
-        <div className="card-flat sticky top-6 bg-mossdark p-6 text-paper">
+        <div className="card-flat sticky top-6 rounded-2xl bg-mossdark p-7 text-paper">
           <p className="font-sans text-xs font-bold uppercase tracking-widest text-gold">
             Summary
           </p>
@@ -322,7 +322,7 @@ export default function DeductionLetter() {
               <dd>−{formatMoney(totalDeductions)}</dd>
             </div>
           </dl>
-          <div className="mt-4 border-t border-paper/20 pt-4">
+          <div className="mt-4 border-t border-white/10 pt-4">
             <p className="font-sans text-xs text-paper/70">Refund due</p>
             <p className="font-serif text-3xl font-bold">
               {formatMoney(Math.max(0, refund))}
@@ -332,7 +332,7 @@ export default function DeductionLetter() {
             type="button"
             onClick={downloadPdf}
             disabled={generating}
-            className="mt-6 w-full bg-clay py-3 text-center font-sans text-sm font-semibold text-paper hover:bg-clay/90 disabled:opacity-60"
+            className="mt-7 w-full rounded-xl bg-clay py-3 text-center font-sans text-sm font-semibold text-white hover:bg-clay/90 disabled:opacity-60"
           >
             {generating ? "Generating…" : "Download PDF statement"}
           </button>

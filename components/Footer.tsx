@@ -3,7 +3,7 @@ import { statesData } from "@/lib/states-data";
 
 export default function Footer() {
   return (
-    <footer className="mt-20 border-t-2 border-ink bg-sand">
+    <footer className="mt-24 border-t border-line bg-sand">
       <div className="mx-auto max-w-5xl px-5 py-10">
         <div className="grid gap-8 sm:grid-cols-3">
           <div>
@@ -19,17 +19,17 @@ export default function Footer() {
             </p>
             <ul className="mt-2 space-y-1 font-sans text-sm">
               <li>
-                <Link href="/calculator" className="hover:text-clay">
+                <Link href="/calculator" className="transition-colors hover:text-moss">
                   Security Deposit Calculator
                 </Link>
               </li>
               <li>
-                <Link href="/deduction-letter" className="hover:text-clay">
+                <Link href="/deduction-letter" className="transition-colors hover:text-moss">
                   Itemized Deduction Letter
                 </Link>
               </li>
               <li>
-                <Link href="/state" className="hover:text-clay">
+                <Link href="/state" className="transition-colors hover:text-moss">
                   State-by-State Deposit Laws
                 </Link>
               </li>
@@ -53,7 +53,7 @@ export default function Footer() {
                 )
                 .map((s) => (
                   <li key={s.slug}>
-                    <Link href={`/state/${s.slug}`} className="hover:text-clay">
+                    <Link href={`/state/${s.slug}`} className="transition-colors hover:text-moss">
                       {s.name}
                     </Link>
                   </li>
@@ -61,7 +61,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-10 border-t border-ink/20 pt-5 font-sans text-xs text-ink/60">
+        <div className="mt-10 border-t border-ink/10 pt-5 font-sans text-xs text-ink/50">
           <p>
             Landlord Tools provides general information and self-help
             document templates, not legal advice. Deposit laws change and

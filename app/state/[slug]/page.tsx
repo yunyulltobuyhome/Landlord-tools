@@ -63,7 +63,7 @@ export default function StatePage({ params }: { params: { slug: string } }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <nav className="font-sans text-xs text-ink/50">
-        <Link href="/state" className="hover:text-clay">
+        <Link href="/state" className="transition-colors hover:text-moss">
           State Laws
         </Link>{" "}
         / {state.name}
@@ -77,7 +77,7 @@ export default function StatePage({ params }: { params: { slug: string } }) {
       </p>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2">
-        <div className="card-flat bg-white p-5">
+        <div className="card-flat rounded-2xl bg-white p-5">
           <p className="font-sans text-xs font-bold uppercase tracking-widest text-moss">
             Deposit cap
           </p>
@@ -85,7 +85,7 @@ export default function StatePage({ params }: { params: { slug: string } }) {
             {state.depositCap}
           </p>
         </div>
-        <div className="card-flat bg-white p-5">
+        <div className="card-flat rounded-2xl bg-white p-5">
           <p className="font-sans text-xs font-bold uppercase tracking-widest text-moss">
             Refund deadline
           </p>
@@ -98,7 +98,7 @@ export default function StatePage({ params }: { params: { slug: string } }) {
             </p>
           )}
         </div>
-        <div className="card-flat bg-white p-5">
+        <div className="card-flat rounded-2xl bg-white p-5">
           <p className="font-sans text-xs font-bold uppercase tracking-widest text-moss">
             Interest required?
           </p>
@@ -109,7 +109,7 @@ export default function StatePage({ params }: { params: { slug: string } }) {
             {state.interestNote}
           </p>
         </div>
-        <div className="card-flat bg-white p-5">
+        <div className="card-flat rounded-2xl bg-white p-5">
           <p className="font-sans text-xs font-bold uppercase tracking-widest text-moss">
             Separate account?
           </p>
@@ -119,7 +119,7 @@ export default function StatePage({ params }: { params: { slug: string } }) {
         </div>
       </div>
 
-      <div className="card-flat mt-4 bg-white p-5">
+      <div className="card-flat mt-4 rounded-2xl bg-white p-5">
         <p className="font-sans text-xs font-bold uppercase tracking-widest text-clay">
           Penalty for noncompliance
         </p>
@@ -132,13 +132,13 @@ export default function StatePage({ params }: { params: { slug: string } }) {
       <div className="mt-10 flex flex-col gap-3 sm:flex-row">
         <Link
           href="/calculator"
-          className="card-flat flex-1 bg-mossdark px-5 py-4 text-center font-sans text-sm font-semibold text-paper hover:bg-moss"
+          className="card-flat flex-1 rounded-2xl bg-mossdark px-5 py-4 text-center font-sans text-sm font-semibold text-white hover:bg-mossdark/90"
         >
           Calculate the refund due →
         </Link>
         <Link
           href="/deduction-letter"
-          className="card-flat flex-1 bg-clay px-5 py-4 text-center font-sans text-sm font-semibold text-paper hover:bg-clay/90"
+          className="card-flat flex-1 rounded-2xl bg-clay px-5 py-4 text-center font-sans text-sm font-semibold text-white hover:bg-clay/90"
         >
           Generate a deduction letter →
         </Link>
@@ -152,7 +152,7 @@ export default function StatePage({ params }: { params: { slug: string } }) {
           cited above or with a local attorney before relying on it. See{" "}
           <a
             href={`${SITE_URL}/state`}
-            className="underline hover:text-clay"
+            className="underline transition-colors hover:text-moss"
           >
             all states
           </a>
