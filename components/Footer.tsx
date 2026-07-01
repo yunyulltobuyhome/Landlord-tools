@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="mt-24 border-t border-line bg-sand">
       <div className="mx-auto max-w-5xl px-5 py-10">
-        <div className="grid gap-8 sm:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-4">
           <div>
             <p className="font-serif text-lg font-bold">Landlord Tools</p>
             <p className="mt-2 max-w-xs font-sans text-sm text-ink/70">
@@ -26,6 +26,16 @@ export default function Footer() {
               <li>
                 <Link href="/deduction-letter" className="transition-colors hover:text-moss">
                   Itemized Deduction Letter
+                </Link>
+              </li>
+              <li>
+                <Link href="/prorated-rent-calculator" className="transition-colors hover:text-moss">
+                  Prorated Rent Calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/late-fee-calculator" className="transition-colors hover:text-moss">
+                  Late Rent Fee Calculator
                 </Link>
               </li>
               <li>
@@ -60,6 +70,23 @@ export default function Footer() {
                 ))}
             </ul>
           </div>
+          <div>
+            <p className="font-sans text-xs font-bold uppercase tracking-widest text-moss">
+              Legal
+            </p>
+            <ul className="mt-2 space-y-1 font-sans text-sm">
+              <li>
+                <Link href="/privacy" className="transition-colors hover:text-moss">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="transition-colors hover:text-moss">
+                  Terms of Service
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="mt-10 border-t border-ink/10 pt-5 font-sans text-xs text-ink/50">
           <p>
@@ -72,6 +99,14 @@ export default function Footer() {
           </p>
           <p className="mt-2">
             © {new Date().getFullYear()} Landlord Tools. All rights reserved.
+            {" · "}
+            <Link href="/privacy" className="underline hover:text-moss">
+              Privacy
+            </Link>
+            {" · "}
+            <Link href="/terms" className="underline hover:text-moss">
+              Terms
+            </Link>
           </p>
         </div>
       </div>

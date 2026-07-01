@@ -12,15 +12,29 @@ export default function Header() {
             deposit &amp; move-out
           </span>
         </Link>
-        <nav className="flex items-center gap-5 font-sans text-sm font-medium text-ink/70 sm:gap-7">
+        <nav className="hidden items-center gap-5 font-sans text-sm font-medium text-ink/70 md:flex md:gap-6">
           <Link href="/calculator" className="transition-colors hover:text-moss">
-            Calculator
+            Deposit Calculator
           </Link>
           <Link href="/deduction-letter" className="transition-colors hover:text-moss">
             Deduction Letter
           </Link>
+          <Link href="/prorated-rent-calculator" className="transition-colors hover:text-moss">
+            Proration
+          </Link>
+          <Link href="/late-fee-calculator" className="transition-colors hover:text-moss">
+            Late Fee
+          </Link>
           <Link href="/state" className="transition-colors hover:text-moss">
             State Laws
+          </Link>
+        </nav>
+        <nav className="flex items-center gap-4 font-sans text-sm font-medium text-ink/70 md:hidden">
+          <Link href="/calculator" className="transition-colors hover:text-moss">
+            Calculator
+          </Link>
+          <Link href="/state" className="transition-colors hover:text-moss">
+            States
           </Link>
         </nav>
       </div>

@@ -11,7 +11,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    {
+      url: `${SITE_URL}/prorated-rent-calculator`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/late-fee-calculator`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     { url: `${SITE_URL}/state`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/privacy`, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${SITE_URL}/terms`, changeFrequency: "yearly", priority: 0.3 },
   ];
 
   const stateRoutes: MetadataRoute.Sitemap = statesData.map((s) => ({

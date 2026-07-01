@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { statesData } from "@/lib/states-data";
+import { SITE_URL, SITE_NAME } from "@/lib/site";
 
 export default function HomePage() {
   const featured = statesData.filter((s) =>
@@ -8,8 +9,28 @@ export default function HomePage() {
     )
   );
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        name: SITE_NAME,
+        url: SITE_URL,
+      },
+      {
+        "@type": "Organization",
+        name: SITE_NAME,
+        url: SITE_URL,
+      },
+    ],
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="bg-sand">
         <div className="mx-auto max-w-5xl px-5 py-20 sm:py-28">
           <p className="font-sans text-xs font-bold uppercase tracking-widest text-moss">
@@ -105,6 +126,42 @@ export default function HomePage() {
             className="mt-7 inline-block font-sans text-sm font-semibold text-white hover:text-white/70"
           >
             View all states →
+          </Link>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-5xl px-5 py-20">
+        <h2 className="font-serif text-3xl font-bold tracking-tight">
+          More free tools for rent day
+        </h2>
+        <p className="mt-3 max-w-2xl font-sans text-ink/60">
+          Two more calculators for the rest of the rent cycle, beyond
+          move-out.
+        </p>
+        <div className="mt-7 grid gap-5 sm:grid-cols-2">
+          <Link
+            href="/prorated-rent-calculator"
+            className="card-flat rounded-2xl bg-white p-7 transition-colors hover:border-moss"
+          >
+            <h3 className="font-serif text-lg font-bold">
+              Prorated Rent Calculator
+            </h3>
+            <p className="mt-2 font-sans text-sm text-ink/60">
+              Charge the right amount when a tenant moves in or out
+              mid-month.
+            </p>
+          </Link>
+          <Link
+            href="/late-fee-calculator"
+            className="card-flat rounded-2xl bg-white p-7 transition-colors hover:border-moss"
+          >
+            <h3 className="font-serif text-lg font-bold">
+              Late Rent Fee Calculator
+            </h3>
+            <p className="mt-2 font-sans text-sm text-ink/60">
+              Work out a flat, percentage, or per-day late fee after the
+              grace period.
+            </p>
           </Link>
         </div>
       </section>
