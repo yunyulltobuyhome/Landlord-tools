@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import LateFeeCalculator from "@/components/LateFeeCalculator";
 import { toolJsonLd } from "@/lib/tool-schema";
+import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
   title: "Late Rent Fee Calculator",
@@ -52,6 +53,7 @@ export default function LateFeeCalculatorPage() {
           than one introduced after the fact.
         </p>
       </div>
+      <Disclaimer />
     </div>
   );
 }

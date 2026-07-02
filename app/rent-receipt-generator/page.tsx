@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import RentReceipt from "@/components/RentReceipt";
 import { toolJsonLd } from "@/lib/tool-schema";
+import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
   title: "Free Rent Receipt Generator",
@@ -49,6 +50,7 @@ export default function RentReceiptPage() {
           show a payment history in a dispute or a court filing.
         </p>
       </div>
+      <Disclaimer />
     </div>
   );
 }

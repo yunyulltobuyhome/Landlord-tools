@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ProratedRentCalculator from "@/components/ProratedRentCalculator";
 import { toolJsonLd } from "@/lib/tool-schema";
+import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
   title: "Prorated Rent Calculator",
@@ -51,6 +52,7 @@ export default function ProratedRentPage() {
           default.
         </p>
       </div>
+      <Disclaimer />
     </div>
   );
 }

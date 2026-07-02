@@ -90,6 +90,18 @@ export default function RentReceipt() {
       y += lineHeight;
       doc.text("Landlord signature", margin, y);
 
+      y += lineHeight * 2;
+      doc.setFont("times", "italic");
+      doc.setFontSize(8.5);
+      const disclaimer =
+        "This receipt is a self-help template generated from the information entered above. It is not legal or tax advice, and Landlord Tools is not a law firm. Retain your own records; consult a professional for advice specific to your situation.";
+      doc
+        .splitTextToSize(disclaimer, pageWidth - margin * 2)
+        .forEach((ln: string) => {
+          doc.text(ln, margin, y);
+          y += 11;
+        });
+
       doc.save("rent-receipt.pdf");
     } finally {
       setGenerating(false);

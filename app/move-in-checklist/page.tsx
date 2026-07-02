@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ConditionChecklist from "@/components/ConditionChecklist";
 import { toolJsonLd } from "@/lib/tool-schema";
+import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
   title: "Move-In / Move-Out Condition Checklist Generator",
@@ -60,6 +61,7 @@ export default function MoveInChecklistPage() {
           to finish the paperwork.
         </p>
       </div>
+      <Disclaimer />
     </div>
   );
 }

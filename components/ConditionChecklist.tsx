@@ -123,12 +123,24 @@ export default function ConditionChecklist() {
       });
 
       y += lineHeight * 2;
-      ensureSpace(lineHeight * 6);
+      ensureSpace(lineHeight * 8);
       doc.text("_____________________________", margin, y);
       doc.text("_____________________________", margin + 260, y);
       y += lineHeight;
       doc.text("Landlord signature / date", margin, y);
       doc.text("Tenant signature / date", margin + 260, y);
+
+      y += lineHeight * 2;
+      doc.setFont("times", "italic");
+      doc.setFontSize(8.5);
+      const disclaimer =
+        "This checklist is a self-help template for documenting a unit's condition, not legal advice, and Landlord Tools is not a law firm. It does not guarantee any outcome in a deposit dispute. Landlord-tenant rules vary by state and locality; consult the applicable statute or a licensed attorney with questions.";
+      doc
+        .splitTextToSize(disclaimer, pageWidth - margin * 2)
+        .forEach((ln: string) => {
+          doc.text(ln, margin, y);
+          y += 11;
+        });
 
       doc.save(
         mode === "move-in"

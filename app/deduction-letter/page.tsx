@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import DeductionLetter from "@/components/DeductionLetter";
 import { toolJsonLd } from "@/lib/tool-schema";
+import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
   title: "Itemized Security Deposit Deduction Letter Generator",
@@ -65,6 +66,7 @@ export default function DeductionLetterPage() {
           and more.
         </p>
       </div>
+      <Disclaimer />
     </div>
   );
 }
