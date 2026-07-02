@@ -27,8 +27,12 @@ function formatMoney(n: number) {
 
 let nextId = 1;
 
-export default function Calculator() {
-  const [stateSlug, setStateSlug] = useState("california");
+export default function Calculator({
+  initialState = "california",
+}: {
+  initialState?: string;
+}) {
+  const [stateSlug, setStateSlug] = useState(initialState);
   const [depositAmount, setDepositAmount] = useState("1500");
   const [moveInDate, setMoveInDate] = useState("");
   const [moveOutDate, setMoveOutDate] = useState("");
