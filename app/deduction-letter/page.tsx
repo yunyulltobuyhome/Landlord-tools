@@ -52,6 +52,18 @@ export default function DeductionLetterPage() {
           it with photos of the unit&apos;s condition and receipts for any
           repairs to support your accounting if it&apos;s ever disputed.
         </p>
+        <p>
+          Not sure whether something is a fair deduction or just normal wear
+          and tear? See our{" "}
+          <a
+            href="/can-a-landlord-charge-for"
+            className="underline hover:text-moss"
+          >
+            wear and tear vs. damage guide
+          </a>{" "}
+          for the most-disputed items — carpet, paint, cleaning, pet damage,
+          and more.
+        </p>
       </div>
     </div>
   );

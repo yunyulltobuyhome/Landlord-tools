@@ -54,6 +54,14 @@ export default function Footer() {
                   State-by-State Deposit Laws
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/can-a-landlord-charge-for"
+                  className="transition-colors hover:text-moss"
+                >
+                  Wear &amp; Tear vs. Damage
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
