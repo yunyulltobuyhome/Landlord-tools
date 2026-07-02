@@ -1,13 +1,1 @@
-# ads.txt — Authorized Digital Sellers
-#
-# This file tells advertisers which companies are authorized to sell this
-# site's ad inventory. It is required for Google AdSense to serve ads at
-# full value.
-#
-# HOW TO ACTIVATE (after AdSense approves the site):
-#   1. Replace pub-0000000000000000 below with your real AdSense publisher
-#      ID (the "ca-pub-..." number, without the "ca-" prefix).
-#   2. Remove the leading "# " from that line so it becomes an active record.
-#   3. Also set ADSENSE_CLIENT in lib/site.ts to your full "ca-pub-..." ID.
-#
-# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-6079116585044991, DIRECT, f08c47fec0942fa0

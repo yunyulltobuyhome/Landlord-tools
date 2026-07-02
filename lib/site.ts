@@ -8,4 +8,4 @@ export const CONTACT_EMAIL = "hello@golandlordtools.com";
 // Google AdSense publisher ID, e.g. "ca-pub-1234567890123456".
 // Leave empty until AdSense approves the site — ads and the ad script
 // only load once this is set AND the visitor has accepted cookies.
-export const ADSENSE_CLIENT = "";
+export const ADSENSE_CLIENT = "ca-pub-6079116585044991";
