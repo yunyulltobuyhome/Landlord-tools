@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Calculator from "@/components/Calculator";
+import { toolJsonLd } from "@/lib/tool-schema";
 
 export const metadata: Metadata = {
   title: "Security Deposit Return Calculator",
@@ -9,8 +10,14 @@ export const metadata: Metadata = {
 };
 
 export default function CalculatorPage() {
+  const jsonLd = toolJsonLd("Security Deposit Return Calculator", "/calculator");
+
   return (
     <div className="mx-auto max-w-5xl px-5 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <p className="font-sans text-xs font-bold uppercase tracking-widest text-moss">
         Free tool
       </p>

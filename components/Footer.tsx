@@ -29,6 +29,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/move-in-checklist" className="transition-colors hover:text-moss">
+                  Move-In / Move-Out Checklist
+                </Link>
+              </li>
+              <li>
                 <Link href="/prorated-rent-calculator" className="transition-colors hover:text-moss">
                   Prorated Rent Calculator
                 </Link>
@@ -36,6 +41,11 @@ export default function Footer() {
               <li>
                 <Link href="/late-fee-calculator" className="transition-colors hover:text-moss">
                   Late Rent Fee Calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/rent-receipt-generator" className="transition-colors hover:text-moss">
+                  Rent Receipt Generator
                 </Link>
               </li>
               <li>

@@ -21,6 +21,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${SITE_URL}/move-in-checklist`,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${SITE_URL}/rent-receipt-generator`,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    { url: `${SITE_URL}/tools`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${SITE_URL}/state`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/privacy`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${SITE_URL}/terms`, changeFrequency: "yearly", priority: 0.3 },

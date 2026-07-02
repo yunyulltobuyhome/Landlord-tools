@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LateFeeCalculator from "@/components/LateFeeCalculator";
+import { toolJsonLd } from "@/lib/tool-schema";
 
 export const metadata: Metadata = {
   title: "Late Rent Fee Calculator",
@@ -9,9 +10,15 @@ export const metadata: Metadata = {
 };
 
 export default function LateFeeCalculatorPage() {
+  const jsonLd = toolJsonLd("Late Rent Fee Calculator", "/late-fee-calculator");
+
   return (
     <div className="mx-auto max-w-5xl px-5 py-10">
-      <p className="font-sans text-xs font-bold uppercase tracking-widest text-clay">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <p className="font-sans text-xs font-bold uppercase tracking-widest text-moss">
         Free tool
       </p>
       <h1 className="mt-2 font-serif text-4xl font-bold sm:text-5xl">

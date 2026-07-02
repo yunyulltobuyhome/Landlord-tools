@@ -132,13 +132,37 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-5xl px-5 py-20">
         <h2 className="font-serif text-3xl font-bold tracking-tight">
-          More free tools for rent day
+          More free tools for the rest of the rent cycle
         </h2>
         <p className="mt-3 max-w-2xl font-sans text-ink/60">
-          Two more calculators for the rest of the rent cycle, beyond
-          move-out.
+          Beyond move-out: proration, late fees, condition checklists, and
+          receipts.
         </p>
         <div className="mt-7 grid gap-5 sm:grid-cols-2">
+          <Link
+            href="/move-in-checklist"
+            className="card-flat rounded-2xl bg-white p-7 transition-colors hover:border-moss"
+          >
+            <h3 className="font-serif text-lg font-bold">
+              Move-In / Move-Out Checklist
+            </h3>
+            <p className="mt-2 font-sans text-sm text-ink/60">
+              Room-by-room condition report, signed and dated — the best
+              evidence in a deposit dispute.
+            </p>
+          </Link>
+          <Link
+            href="/rent-receipt-generator"
+            className="card-flat rounded-2xl bg-white p-7 transition-colors hover:border-moss"
+          >
+            <h3 className="font-serif text-lg font-bold">
+              Rent Receipt Generator
+            </h3>
+            <p className="mt-2 font-sans text-sm text-ink/60">
+              A clean, dated PDF receipt for any rent payment, in under a
+              minute.
+            </p>
+          </Link>
           <Link
             href="/prorated-rent-calculator"
             className="card-flat rounded-2xl bg-white p-7 transition-colors hover:border-moss"
@@ -164,6 +188,12 @@ export default function HomePage() {
             </p>
           </Link>
         </div>
+        <Link
+          href="/tools"
+          className="mt-7 inline-block font-sans text-sm font-semibold text-moss hover:underline"
+        >
+          View all tools →
+        </Link>
       </section>
 
       <section className="mx-auto max-w-5xl px-5 py-20">

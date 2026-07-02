@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import DeductionLetter from "@/components/DeductionLetter";
+import { toolJsonLd } from "@/lib/tool-schema";
 
 export const metadata: Metadata = {
   title: "Itemized Security Deposit Deduction Letter Generator",
@@ -9,8 +10,17 @@ export const metadata: Metadata = {
 };
 
 export default function DeductionLetterPage() {
+  const jsonLd = toolJsonLd(
+    "Itemized Security Deposit Deduction Letter Generator",
+    "/deduction-letter"
+  );
+
   return (
     <div className="mx-auto max-w-5xl px-5 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <p className="font-sans text-xs font-bold uppercase tracking-widest text-moss">
         Free tool
       </p>
