@@ -285,6 +285,249 @@ export const deductionsData: DeductionItem[] = [
       "Smoke-permeated carpet and fixtures",
     ],
   },
+  {
+    slug: "last-months-rent",
+    item: "last month's rent",
+    question: "Can a landlord use a security deposit for last month's rent?",
+    verdict: "It depends",
+    shortAnswer:
+      "A security deposit and prepaid last month's rent are legally different funds. A tenant usually can't demand you apply the deposit to their final month, but you can generally deduct rent the tenant actually failed to pay.",
+    detail: [
+      "A security deposit secures against damage and unpaid amounts; 'last month's rent' is prepaid rent. Tenants often ask to 'just use my deposit' for the final month, but in most states a tenant can't unilaterally force that — doing so would leave nothing to cover damage discovered after move-out.",
+      "From the landlord's side, if the tenant genuinely skips the final month, unpaid rent is one of the most accepted deductions, so you can typically apply the deposit to it. What you generally can't do is treat a sum the lease labeled a 'deposit' as prepaid rent by default.",
+      "Some states have specific rules — and even different return deadlines — distinguishing a deposit from last month's rent, so check your lease wording and state law before treating them as interchangeable.",
+    ],
+    wearExamples: ["n/a — this is a financial question, not a condition issue"],
+    damageExamples: [
+      "Unpaid final-month rent the tenant skipped",
+      "A rent shortfall the tenant left owing",
+    ],
+  },
+  {
+    slug: "lost-keys",
+    item: "lost keys",
+    question: "Can a landlord charge for lost keys or re-keying the locks?",
+    verdict: "Often a valid deduction",
+    shortAnswer:
+      "If a tenant doesn't return keys, fobs, or remotes — or you must re-key the locks because keys weren't returned — the reasonable, documented cost is generally a fair deduction.",
+    detail: [
+      "Returning all keys is part of returning the unit. When keys, garage remotes, or fobs are lost or not handed back, you often have to re-key locks or replace remotes to secure the unit for the next tenant, and that cost is usually chargeable.",
+      "Keep it to actual, reasonable cost — a locksmith invoice or the price of replacement fobs. An inflated 'lock fee' beyond real cost is the kind of charge tenants successfully dispute.",
+      "Routine re-keying you'd perform between every tenant regardless is arguably your own cost; re-keying forced specifically because keys weren't returned is the tenant's.",
+    ],
+    wearExamples: [
+      "Normal key wear",
+      "Routine turnover re-keying you'd do anyway",
+    ],
+    damageExamples: [
+      "Unreturned keys, fobs, or remotes",
+      "Re-keying forced by lost keys",
+    ],
+  },
+  {
+    slug: "light-bulbs",
+    item: "light bulbs",
+    question: "Can a landlord charge for replacing light bulbs?",
+    verdict: "Usually normal wear and tear",
+    shortAnswer:
+      "Burned-out bulbs are generally a minor turnover cost and normal wear, so charging for standard bulbs is hard to justify — though bulbs a tenant removed or specialty bulbs they broke can be different.",
+    detail: [
+      "Light bulbs burn out; that's expected. Deducting for a few standard bulbs is a small, easily-challenged charge most tenants and courts view as ordinary turnover rather than damage.",
+      "It's more defensible when bulbs are missing entirely because the tenant took them, or when expensive specialty bulbs need replacing because the tenant broke or removed them. Even then, keep any charge to actual cost.",
+    ],
+    wearExamples: ["Standard bulbs burned out from normal use"],
+    damageExamples: [
+      "Bulbs the tenant removed and took with them",
+      "Specialty bulbs broken through misuse",
+    ],
+  },
+  {
+    slug: "trash-removal",
+    item: "trash removal",
+    question: "Can a landlord charge for trash or junk removal?",
+    verdict: "Often a valid deduction",
+    shortAnswer:
+      "If a tenant leaves behind trash, furniture, or belongings you have to haul away, the actual disposal cost is generally a fair deduction — returning the unit empty is part of moving out.",
+    detail: [
+      "Tenants are expected to remove their belongings and trash. When they leave junk, old furniture, or piles of garbage, you can usually deduct the real cost of hauling and disposal, including dump fees.",
+      "Photograph what was left before removal and keep hauling receipts. 'Trash removal — $300' with a photo of a room full of abandoned furniture is defensible; the same charge on a broom-clean unit is not.",
+    ],
+    wearExamples: ["A nearly-empty, tidy unit with light dust"],
+    damageExamples: [
+      "Furniture or belongings left behind",
+      "Bags of trash and debris",
+      "Dump and hauling fees",
+    ],
+  },
+  {
+    slug: "lawn-care",
+    item: "lawn care",
+    question: "Can a landlord charge for lawn care or yard cleanup from the deposit?",
+    verdict: "It depends",
+    shortAnswer:
+      "If the lease made the tenant responsible for the yard and they let it badly deteriorate, cleanup can be chargeable — but not for normal seasonal growth or landscaping you'd maintain anyway.",
+    detail: [
+      "Where the lease clearly assigns lawn and yard upkeep to the tenant, a yard left seriously overgrown, weed-choked, or damaged can support a cleanup deduction. Where the landlord handles landscaping, it's the landlord's cost.",
+      "Normal seasonal change — grass grown since the last mow, autumn leaves — isn't damage. Any charge should reflect restoring the yard to its move-in condition, not upgrading it.",
+    ],
+    wearExamples: [
+      "Normal seasonal growth",
+      "A yard maintained as the lease required",
+    ],
+    damageExamples: [
+      "Severely overgrown yard the tenant was required to maintain",
+      "Landscaping killed through neglect",
+    ],
+  },
+  {
+    slug: "door-damage",
+    item: "door damage",
+    question: "Can a landlord charge for a damaged door?",
+    verdict: "It depends",
+    shortAnswer:
+      "Minor scuffs and hardware loosened by years of use are wear and tear, but holes, cracks, broken doors, or damage from forcing a lock are generally chargeable.",
+    detail: [
+      "Doors absorb normal use — light scuffing, a slightly loose hinge, minor marks near the handle — and that's wear and tear that adjusting or refinishing handles as maintenance.",
+      "Real damage is chargeable: holes punched or kicked through a door, cracked panels, doors pulled off the frame, or damage from forcing a lock. Interior hollow-core doors are inexpensive, so keep replacement charges to actual cost and prorate where relevant.",
+    ],
+    wearExamples: [
+      "Light scuffs and marks",
+      "Slightly loose hinges from age",
+    ],
+    damageExamples: [
+      "Holes or cracks in the door",
+      "Doors kicked in or off the frame",
+      "Damage from forcing a lock",
+    ],
+  },
+  {
+    slug: "window-screens",
+    item: "window screens",
+    question: "Can a landlord charge for torn or missing window screens?",
+    verdict: "It depends",
+    shortAnswer:
+      "Screens gone brittle or faded from sun and age are wear and tear, but screens a tenant tore, bent, or lost can be a small, reasonable replacement charge.",
+    detail: [
+      "Window screens degrade in sunlight and turn brittle over years — that deterioration is wear and tear, not a tenant charge. Expecting screens to look new after long exposure isn't reasonable.",
+      "Screens torn, punched out, bent, or missing because of the tenant can be replaced at their cost. Screens are cheap, so keep any deduction to the actual replacement price.",
+    ],
+    wearExamples: [
+      "Sun-faded, brittle screens",
+      "Minor aging",
+    ],
+    damageExamples: [
+      "Torn or punched-out screens",
+      "Bent frames or missing screens the tenant removed",
+    ],
+  },
+  {
+    slug: "broken-window",
+    item: "broken window",
+    question: "Can a landlord charge for a broken window?",
+    verdict: "Often a valid deduction",
+    shortAnswer:
+      "A window the tenant, their household, or guests broke is generally a fair deduction, since broken glass is damage — but glass that failed on its own from a defect is the landlord's cost.",
+    detail: [
+      "Broken or cracked window glass caused by the tenant, their household, or guests is classic damage you can deduct — the reasonable, documented cost of repair or reglazing.",
+      "The exception is glass that failed on its own: a blown seal in a double-pane unit or a crack from a structural or building defect. If the tenant didn't cause it, it's a repair the landlord absorbs.",
+    ],
+    wearExamples: [
+      "Seal failure in older double-pane glass",
+      "Defect-related cracks the tenant didn't cause",
+    ],
+    damageExamples: ["Glass broken by the tenant, household, or guests"],
+  },
+  {
+    slug: "countertop-damage",
+    item: "countertop damage",
+    question: "Can a landlord charge for burns, cuts, or damage to countertops?",
+    verdict: "It depends",
+    shortAnswer:
+      "Light surface wear on a counter is expected, but burns, deep cuts, cracks, or chips the tenant caused can be chargeable — prorated for the counter's age.",
+    detail: [
+      "Countertops show light use over time — fine scratches, dulling — and that's wear and tear. A counter that's simply aged isn't a tenant charge.",
+      "Heat burns from hot pans, deep knife cuts, cracks, chips, or laminate lifted by standing water are damage. Because full replacement is costly, prorate for the counter's remaining life and document with photos rather than billing a new countertop for old damage.",
+    ],
+    wearExamples: [
+      "Fine surface scratches",
+      "Dulling with age",
+    ],
+    damageExamples: [
+      "Heat burns from pans",
+      "Deep knife cuts, cracks, or chips",
+      "Laminate lifted by standing water",
+    ],
+  },
+  {
+    slug: "tv-mount-holes",
+    item: "TV mount holes",
+    question: "Can a landlord charge for holes from mounting a TV?",
+    verdict: "It depends",
+    shortAnswer:
+      "Small picture-hanging holes are wear and tear, but the large anchor holes left by a TV mount often need real drywall repair, which can be a fair, modest deduction.",
+    detail: [
+      "A TV wall mount uses heavy anchors that leave large holes and can crack or crater the drywall — that goes beyond the pin holes of hanging a picture, so patching, sanding, and repainting the affected area can be chargeable.",
+      "If the lease required permission to mount a TV and the tenant didn't ask, that strengthens the case. Keep the charge to the actual repair, not a whole-room repaint unless the wall genuinely needs it.",
+    ],
+    wearExamples: ["Small nail or pin holes filled during normal repainting"],
+    damageExamples: [
+      "Large anchor holes from a mount",
+      "Cracked or cratered drywall",
+    ],
+  },
+  {
+    slug: "water-damage",
+    item: "water damage",
+    question: "Can a landlord charge for water damage?",
+    verdict: "It depends",
+    shortAnswer:
+      "Water damage the tenant caused — an overflowed tub, an unreported leak they were responsible for, or standing water left to sit — can be chargeable, but damage from plumbing or building failures is the landlord's cost.",
+    detail: [
+      "The question is who caused it. Overflowing a tub or sink, leaving windows open in a storm, or ignoring a leak they should have reported can make water damage the tenant's responsibility.",
+      "Water damage from failed plumbing, a leaking roof, or a landlord-supplied appliance that failed on its own is not the tenant's charge. Because water damage is costly and overlaps with habitability, document the cause carefully before deducting.",
+    ],
+    wearExamples: ["n/a — water damage is a condition issue, not aging"],
+    damageExamples: [
+      "Overflowed tub or sink",
+      "Ignored leaks the tenant caused",
+      "Storm damage from windows left open",
+    ],
+  },
+  {
+    slug: "oven-cleaning",
+    item: "oven cleaning",
+    question: "Can a landlord charge for cleaning a dirty oven or stove?",
+    verdict: "It depends",
+    shortAnswer:
+      "You can deduct for a genuinely filthy, grease-caked oven left well beyond move-in condition — but not as a routine fee when the tenant left the kitchen reasonably clean.",
+    detail: [
+      "Ovens and stovetops caked in baked-on grease and food, well beyond a normal wipe-down, can support a cleaning deduction for the actual, reasonable cost.",
+      "What you can't do is charge an automatic oven-cleaning fee when the tenant left it reasonably clean, or bill to make it cleaner than it was at move-in. A move-in checklist noting the appliance's starting condition is your best support.",
+    ],
+    wearExamples: ["Light cooking residue a routine wipe handles"],
+    damageExamples: ["Heavy baked-on grease and grime left at move-out"],
+  },
+  {
+    slug: "bathroom-fixtures",
+    item: "bathroom fixtures",
+    question: "Can a landlord charge for broken towel bars or bathroom fixtures?",
+    verdict: "It depends",
+    shortAnswer:
+      "Fixtures loosened by normal use are wear and tear, but towel bars, holders, or fixtures a tenant snapped off or cracked can be replaced at their cost.",
+    detail: [
+      "Bathroom hardware loosens over years of normal use; tightening or minor wear is maintenance the landlord handles.",
+      "Fixtures pulled out of the wall, snapped towel bars, cracked sinks or toilet tanks, or a shower door knocked off its track through misuse are damage. These parts are usually inexpensive, so charge the actual replacement cost.",
+    ],
+    wearExamples: [
+      "Hardware loosened by normal use",
+      "Minor aging of fixtures",
+    ],
+    damageExamples: [
+      "Snapped towel bars or holders",
+      "Cracked sink or toilet tank",
+      "Fixtures pulled from the wall",
+    ],
+  },
 ];
 
 export function getDeductionBySlug(slug: string): DeductionItem | undefined {
