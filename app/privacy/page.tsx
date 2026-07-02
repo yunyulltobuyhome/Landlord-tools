@@ -49,31 +49,52 @@ export default function PrivacyPage() {
           </h2>
           <p className="mt-2">
             We may use privacy-focused analytics (such as aggregate page-view
-            counts) and, in the future, advertising services to keep this
-            site free. Analytics and advertising providers may use cookies
-            or similar technologies to measure traffic and serve relevant
-            ads. Where required, we will show a consent banner and honor
-            your choice before setting non-essential cookies. You can block
-            or delete cookies at any time in your browser settings.
+            counts) and advertising services to keep this site free.
+            Analytics and advertising providers may use cookies or similar
+            technologies to measure traffic and serve ads. We show a consent
+            banner and honor your choice before setting any non-essential
+            (analytics or advertising) cookies. You can change your choice at
+            any time through the &quot;Cookie settings&quot; link in the
+            footer, or block and delete cookies in your browser settings. Our
+            dedicated{" "}
+            <a href="/cookies" className="underline hover:text-moss">
+              Cookie Policy
+            </a>{" "}
+            explains each category.
           </p>
         </section>
 
         <section>
           <h2 className="font-serif text-xl font-bold text-ink">
-            Advertising
+            Advertising and Google AdSense
           </h2>
           <p className="mt-2">
-            If this site displays ads (for example, through Google AdSense),
-            the ad provider may use cookies or device identifiers to serve
-            ads based on your visits to this and other websites. You can opt
-            out of personalized advertising through your ad settings or via{" "}
+            If this site displays ads, it does so through Google AdSense.
+            Third-party vendors, including Google, use cookies to serve ads
+            based on your prior visits to this and other websites. Google&apos;s
+            use of advertising cookies enables it and its partners to serve
+            ads to you based on your visits to this and/or other sites on the
+            internet.
+          </p>
+          <p className="mt-2">
+            You can opt out of personalized advertising by visiting{" "}
+            <a
+              href="https://www.google.com/settings/ads"
+              className="underline hover:text-moss"
+            >
+              Google Ad Settings
+            </a>
+            . You can also opt out of some third-party vendors&apos; use of
+            cookies for personalized advertising at{" "}
             <a
               href="https://www.aboutads.info/choices/"
               className="underline hover:text-moss"
             >
               aboutads.info
             </a>
-            .
+            . For visitors in the EEA, UK, and Switzerland, we request
+            consent before advertising cookies are set, as required by
+            Google&apos;s EU user consent policy.
           </p>
         </section>
 

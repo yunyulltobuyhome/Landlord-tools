@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { statesData } from "@/lib/states-data";
+import CookieSettingsLink from "@/components/CookieSettingsLink";
 
 export default function Footer() {
   return (
@@ -82,18 +83,36 @@ export default function Footer() {
           </div>
           <div>
             <p className="font-sans text-xs font-bold uppercase tracking-widest text-moss">
-              Legal
+              Site
             </p>
             <ul className="mt-2 space-y-1 font-sans text-sm">
+              <li>
+                <Link href="/about" className="transition-colors hover:text-moss">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="transition-colors hover:text-moss">
+                  Contact
+                </Link>
+              </li>
               <li>
                 <Link href="/privacy" className="transition-colors hover:text-moss">
                   Privacy Policy
                 </Link>
               </li>
               <li>
+                <Link href="/cookies" className="transition-colors hover:text-moss">
+                  Cookie Policy
+                </Link>
+              </li>
+              <li>
                 <Link href="/terms" className="transition-colors hover:text-moss">
                   Terms of Service
                 </Link>
+              </li>
+              <li>
+                <CookieSettingsLink className="transition-colors hover:text-moss" />
               </li>
             </ul>
           </div>
