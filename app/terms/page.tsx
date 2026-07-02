@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SITE_NAME } from "@/lib/site";
+import { SITE_NAME, CONTACT_EMAIL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
@@ -102,8 +102,8 @@ export default function TermsPage() {
           <h2 className="font-serif text-xl font-bold text-ink">Contact</h2>
           <p className="mt-2">
             Questions about these terms can be sent to{" "}
-            <a href="mailto:hello@landlordtools.io" className="underline hover:text-moss">
-              hello@landlordtools.io
+            <a href={`mailto:${CONTACT_EMAIL}`} className="underline hover:text-moss">
+              {CONTACT_EMAIL}
             </a>
             .
           </p>
