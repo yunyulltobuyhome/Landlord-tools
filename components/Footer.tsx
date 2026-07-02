@@ -50,6 +50,14 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link
+                  href="/security-deposit-demand-letter"
+                  className="transition-colors hover:text-moss"
+                >
+                  Deposit Demand Letter (tenants)
+                </Link>
+              </li>
+              <li>
                 <Link href="/state" className="transition-colors hover:text-moss">
                   State-by-State Deposit Laws
                 </Link>

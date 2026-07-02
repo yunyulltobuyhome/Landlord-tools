@@ -131,6 +131,28 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-5xl px-5 py-20">
+        <div className="card-flat rounded-2xl bg-clay p-8 text-white sm:p-10">
+          <p className="font-sans text-xs font-bold uppercase tracking-widest text-white/80">
+            Renter, not a landlord?
+          </p>
+          <h2 className="mt-3 max-w-2xl font-serif text-3xl font-bold tracking-tight">
+            Landlord won&apos;t return your security deposit?
+          </h2>
+          <p className="mt-3 max-w-xl font-sans text-white/85">
+            Generate a free demand letter that cites your state&apos;s return
+            deadline and the penalties your landlord faces for withholding it —
+            the step that settles most cases before small claims.
+          </p>
+          <Link
+            href="/security-deposit-demand-letter"
+            className="mt-6 inline-block rounded-xl bg-white px-6 py-3 font-sans text-sm font-semibold text-clay transition-colors hover:bg-white/90"
+          >
+            Get my deposit back →
+          </Link>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-5xl px-5 py-20">
         <h2 className="font-serif text-3xl font-bold tracking-tight">
           More free tools for the rest of the rent cycle
         </h2>

@@ -32,6 +32,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.85,
     },
+    {
+      url: `${SITE_URL}/security-deposit-demand-letter`,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     { url: `${SITE_URL}/tools`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${SITE_URL}/state`, changeFrequency: "monthly", priority: 0.8 },
     {

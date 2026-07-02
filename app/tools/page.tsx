@@ -40,6 +40,12 @@ const tools = [
     name: "Rent Receipt Generator",
     description: "A clean, dated PDF receipt for any rent payment.",
   },
+  {
+    href: "/security-deposit-demand-letter",
+    name: "Deposit Demand Letter (for tenants)",
+    description:
+      "Landlord won't return your deposit? Generate a demand letter citing your state's deadline and penalties.",
+  },
 ];
 
 export default function ToolsPage() {
