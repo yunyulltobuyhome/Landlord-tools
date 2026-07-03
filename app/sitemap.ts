@@ -4,6 +4,8 @@ import { deductionsData } from "@/lib/deductions-data";
 import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const lastModified = new Date();
+
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/`, changeFrequency: "monthly", priority: 1 },
     { url: `${SITE_URL}/calculator`, changeFrequency: "monthly", priority: 0.9 },
@@ -63,5 +65,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...stateRoutes, ...deductionRoutes];
+  // Stamp every entry with a lastmod so crawlers get a freshness signal.
+  return [...staticRoutes, ...stateRoutes, ...deductionRoutes].map((r) => ({
+    ...r,
+    lastModified,
+  }));
 }

@@ -20,9 +20,23 @@ export const metadata: Metadata = {
   },
   description:
     "Free security deposit return calculator, itemized deduction letter generator, and state-by-state deposit law guides for independent landlords and small property owners.",
+  alternates: { canonical: "/" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
+    title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    description:
+      "Free security deposit calculators, document generators, and state-by-state deposit law guides.",
     url: SITE_URL,
   },
   twitter: {
