@@ -50,6 +50,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/rent-ledger" className="transition-colors hover:text-moss">
+                  Rent Ledger &amp; Tracker
+                </Link>
+              </li>
+              <li>
                 <Link
                   href="/security-deposit-demand-letter"
                   className="transition-colors hover:text-moss"

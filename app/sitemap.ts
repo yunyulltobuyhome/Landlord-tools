@@ -35,6 +35,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${SITE_URL}/rent-ledger`,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${SITE_URL}/security-deposit-demand-letter`,
       changeFrequency: "monthly",
       priority: 0.9,

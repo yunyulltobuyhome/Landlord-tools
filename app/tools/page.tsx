@@ -41,6 +41,11 @@ const tools = [
     description: "A clean, dated PDF receipt for any rent payment.",
   },
   {
+    href: "/rent-ledger",
+    name: "Rent Ledger & Payment Tracker",
+    description: "Log every payment and export a PDF ledger. No signup.",
+  },
+  {
     href: "/security-deposit-demand-letter",
     name: "Deposit Demand Letter (for tenants)",
     description:
