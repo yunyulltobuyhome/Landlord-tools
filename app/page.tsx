@@ -169,7 +169,7 @@ export default function HomePage() {
               Move-In / Move-Out Checklist
             </h3>
             <p className="mt-2 font-sans text-sm text-ink/60">
-              Room-by-room condition report, signed and dated — the best
+              Attach photos to each room and export a signed PDF — the best
               evidence in a deposit dispute.
             </p>
           </Link>

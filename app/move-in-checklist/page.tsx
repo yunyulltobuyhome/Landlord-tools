@@ -4,9 +4,9 @@ import { toolJsonLd } from "@/lib/tool-schema";
 import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
-  title: "Move-In / Move-Out Condition Checklist Generator",
+  title: "Move-In / Move-Out Condition Checklist with Photos",
   description:
-    "Free move-in and move-out condition checklist generator for landlords — record room-by-room condition and download a signed PDF report, no signup.",
+    "Free move-in and move-out condition checklist with photo attachments — document each room, embed pictures, and download a signed PDF report. No signup; photos stay on your device.",
   alternates: { canonical: "/move-in-checklist" },
 };
 
@@ -26,12 +26,14 @@ export default function MoveInChecklistPage() {
         Free tool
       </p>
       <h1 className="mt-2 font-serif text-4xl font-bold sm:text-5xl">
-        Move-In / Move-Out Condition Checklist
+        Move-In / Move-Out Condition Checklist with Photos
       </h1>
       <p className="mt-3 max-w-2xl font-sans text-ink/70">
-        Record the condition of every room at move-in and move-out, then
-        download a signed, dated PDF — the strongest evidence you can have
-        if a security deposit deduction is ever disputed.
+        Record the condition of every room and <strong>attach photos to
+        each area</strong>, then download a signed, dated PDF with your
+        pictures embedded — the strongest evidence you can have if a
+        security deposit deduction is ever disputed. Free, no signup, and
+        your photos never leave your device.
       </p>
       <div className="mt-8">
         <ConditionChecklist />

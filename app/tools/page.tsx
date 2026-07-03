@@ -23,7 +23,7 @@ const tools = [
   {
     href: "/move-in-checklist",
     name: "Move-In / Move-Out Checklist",
-    description: "Room-by-room condition report, signed and dated.",
+    description: "Photo-documented condition report, signed and dated.",
   },
   {
     href: "/prorated-rent-calculator",
