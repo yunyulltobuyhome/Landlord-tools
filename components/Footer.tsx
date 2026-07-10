@@ -20,6 +20,11 @@ export default function Footer() {
             </p>
             <ul className="mt-2 space-y-1 font-sans text-sm">
               <li>
+                <Link href="/move-out-packet" className="transition-colors hover:text-moss">
+                  Move-Out Packet (all-in-one)
+                </Link>
+              </li>
+              <li>
                 <Link href="/calculator" className="transition-colors hover:text-moss">
                   Security Deposit Calculator
                 </Link>

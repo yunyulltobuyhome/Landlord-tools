@@ -10,6 +10,12 @@ export const metadata: Metadata = {
 
 const tools = [
   {
+    href: "/move-out-packet",
+    name: "Move-Out Packet (all-in-one)",
+    description:
+      "Calculator + itemized deduction letter + photo condition report, combined into one PDF.",
+  },
+  {
     href: "/calculator",
     name: "Security Deposit Calculator",
     description:

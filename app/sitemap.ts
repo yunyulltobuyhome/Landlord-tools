@@ -8,6 +8,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/`, changeFrequency: "monthly", priority: 1 },
+    {
+      url: `${SITE_URL}/move-out-packet`,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
     { url: `${SITE_URL}/calculator`, changeFrequency: "monthly", priority: 0.9 },
     {
       url: `${SITE_URL}/deduction-letter`,

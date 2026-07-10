@@ -48,16 +48,16 @@ export default function HomePage() {
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <Link
-              href="/calculator"
+              href="/move-out-packet"
               className="card-flat rounded-xl bg-ink px-6 py-3 font-sans text-sm font-semibold text-white hover:bg-ink/90"
             >
-              Calculate a refund →
+              Generate a full move-out packet →
             </Link>
             <Link
-              href="/deduction-letter"
+              href="/calculator"
               className="rounded-xl border border-line bg-white px-6 py-3 font-sans text-sm font-semibold text-ink hover:border-moss hover:text-moss"
             >
-              Generate a deduction letter →
+              Just calculate a refund →
             </Link>
           </div>
         </div>
