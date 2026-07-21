@@ -165,6 +165,14 @@ export default function StatePage({ params }: { params: { slug: string } }) {
           <p className="mt-1 font-sans text-xs text-ink/60">
             {state.interestNote}
           </p>
+          {state.interestRequired && (
+            <Link
+              href="/security-deposit-interest-calculator"
+              className="mt-2 inline-block font-sans text-xs font-semibold text-moss hover:underline"
+            >
+              Calculate the interest owed →
+            </Link>
+          )}
         </div>
         <div className="card-flat rounded-2xl bg-white p-5">
           <p className="font-sans text-xs font-bold uppercase tracking-widest text-moss">

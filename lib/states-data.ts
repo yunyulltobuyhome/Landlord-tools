@@ -7,6 +7,11 @@ export type StateLaw = {
   returnDeadlineNote?: string;
   interestRequired: boolean;
   interestNote: string;
+  // A statutory fixed annual interest rate (percent) where one is clearly
+  // set and stable. Left undefined for states where the rate is tied to a
+  // bank/treasury index and changes over time — the calculator asks the
+  // user to enter the current rate in those cases.
+  interestRate?: number;
   separateAccountRequired: boolean;
   penalty: string;
   statute: string;
@@ -282,6 +287,7 @@ export const statesData: StateLaw[] = [
     returnDeadlineDays: 30,
     interestRequired: true,
     interestNote: "5% annual simple interest (or the rate actually earned in an interest-bearing account) is required.",
+    interestRate: 5,
     separateAccountRequired: true,
     penalty: "Noncompliance (no separate account, no receipt, no interest) can result in treble damages plus attorney's fees.",
     statute: "Mass. Gen. Laws ch. 186, § 15B",
@@ -454,6 +460,7 @@ export const statesData: StateLaw[] = [
     returnDeadlineDays: 30,
     interestRequired: true,
     interestNote: "5% simple annual interest required only if the deposit exceeds one month's rent and is held over 6 months.",
+    interestRate: 5,
     separateAccountRequired: false,
     penalty: "Bad-faith retention can result in damages equal to the wrongfully withheld amount, doubled.",
     statute: "Ohio Rev. Code § 5321.16",

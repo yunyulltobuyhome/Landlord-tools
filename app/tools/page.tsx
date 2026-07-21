@@ -22,6 +22,12 @@ const tools = [
       "Refund amount, legal deadline, and interest owed by state.",
   },
   {
+    href: "/security-deposit-interest-calculator",
+    name: "Security Deposit Interest Calculator",
+    description:
+      "Interest a landlord owes on a deposit, with an editable, never-stale rate.",
+  },
+  {
     href: "/deduction-letter",
     name: "Itemized Deduction Letter",
     description: "Generate a PDF statement for any deposit deduction.",

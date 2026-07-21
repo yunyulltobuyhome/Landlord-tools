@@ -30,6 +30,14 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link
+                  href="/security-deposit-interest-calculator"
+                  className="transition-colors hover:text-moss"
+                >
+                  Deposit Interest Calculator
+                </Link>
+              </li>
+              <li>
                 <Link href="/deduction-letter" className="transition-colors hover:text-moss">
                   Itemized Deduction Letter
                 </Link>
