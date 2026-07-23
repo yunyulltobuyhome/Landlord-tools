@@ -146,6 +146,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/disclaimer" className="transition-colors hover:text-moss">
+                  Legal Disclaimer
+                </Link>
+              </li>
+              <li>
                 <CookieSettingsLink className="transition-colors hover:text-moss" />
               </li>
             </ul>

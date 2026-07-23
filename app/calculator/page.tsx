@@ -3,7 +3,7 @@ import Calculator from "@/components/Calculator";
 import { toolJsonLd } from "@/lib/tool-schema";
 
 export const metadata: Metadata = {
-  title: "Security Deposit Return Calculator",
+  title: "Security Deposit Return Calculator (Free, by State)",
   description:
     "Calculate how much security deposit to return a tenant, the legal refund deadline in your state, and any interest owed — free, no signup.",
   alternates: { canonical: "/calculator" },

@@ -4,7 +4,7 @@ import { toolJsonLd } from "@/lib/tool-schema";
 import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
-  title: "Prorated Rent Calculator",
+  title: "Prorated Rent Calculator (Free) — Move-In & Move-Out",
   description:
     "Calculate prorated rent for a partial month when a tenant moves in or out mid-month — free, instant, no signup.",
   alternates: { canonical: "/prorated-rent-calculator" },

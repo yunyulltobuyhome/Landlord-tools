@@ -66,6 +66,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/privacy`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${SITE_URL}/cookies`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${SITE_URL}/terms`, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${SITE_URL}/disclaimer`, changeFrequency: "yearly", priority: 0.3 },
   ];
 
   const stateRoutes: MetadataRoute.Sitemap = statesData.map((s) => ({

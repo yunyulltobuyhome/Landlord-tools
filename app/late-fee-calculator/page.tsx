@@ -4,7 +4,7 @@ import { toolJsonLd } from "@/lib/tool-schema";
 import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
-  title: "Late Rent Fee Calculator",
+  title: "Late Rent Fee Calculator (Free) — Flat, %, or Per-Day",
   description:
     "Calculate a late rent fee — flat amount, percentage of rent, or per-day charge — after a grace period. Free, instant, no signup.",
   alternates: { canonical: "/late-fee-calculator" },

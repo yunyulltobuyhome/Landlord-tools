@@ -38,9 +38,21 @@ export const metadata: Metadata = {
     description:
       "Free security deposit calculators, document generators, and state-by-state deposit law guides.",
     url: SITE_URL,
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Landlord Tools — free security deposit calculators and documents",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
+    title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    description:
+      "Free security deposit calculators, document generators, and state-by-state deposit law guides.",
+    images: ["/og.png"],
   },
 };
 
