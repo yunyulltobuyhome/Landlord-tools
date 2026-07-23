@@ -38,6 +38,12 @@ const tools = [
     description: "Photo-documented condition report, signed and dated.",
   },
   {
+    href: "/rent-split-calculator",
+    name: "Rent Split Calculator",
+    description:
+      "Split rent between roommates by income, room size, or a weighted blend.",
+  },
+  {
     href: "/prorated-rent-calculator",
     name: "Prorated Rent Calculator",
     description: "Exact rent for a partial first or last month.",

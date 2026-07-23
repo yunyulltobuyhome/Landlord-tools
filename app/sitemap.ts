@@ -50,6 +50,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${SITE_URL}/rent-split-calculator`,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${SITE_URL}/security-deposit-demand-letter`,
       changeFrequency: "monthly",
       priority: 0.9,
