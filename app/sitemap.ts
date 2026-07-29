@@ -4,8 +4,6 @@ import { deductionsData } from "@/lib/deductions-data";
 import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
-
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/`, changeFrequency: "monthly", priority: 1 },
     {
@@ -86,9 +84,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  // Stamp every entry with a lastmod so crawlers get a freshness signal.
-  return [...staticRoutes, ...stateRoutes, ...deductionRoutes].map((r) => ({
-    ...r,
-    lastModified,
-  }));
+  // Deliberately no lastmod: stamping every URL with the build time on each
+  // deploy would claim all pages changed every time, and Google ignores
+  // lastmod entirely once it looks unreliable. Better to omit it than to lie.
+  return [...staticRoutes, ...stateRoutes, ...deductionRoutes];
 }
