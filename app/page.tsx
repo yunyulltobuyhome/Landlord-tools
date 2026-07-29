@@ -143,12 +143,20 @@ export default function HomePage() {
             deadline and the penalties your landlord faces for withholding it —
             the step that settles most cases before small claims.
           </p>
-          <Link
-            href="/security-deposit-demand-letter"
-            className="mt-6 inline-block rounded-xl bg-white px-6 py-3 font-sans text-sm font-semibold text-clay transition-colors hover:bg-white/90"
-          >
-            Get my deposit back →
-          </Link>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link
+              href="/security-deposit-demand-letter"
+              className="inline-block rounded-xl bg-white px-6 py-3 font-sans text-sm font-semibold text-clay transition-colors hover:bg-white/90"
+            >
+              Get my deposit back →
+            </Link>
+            <Link
+              href="/rent-affordability-calculator"
+              className="inline-block rounded-xl border border-white/50 px-6 py-3 font-sans text-sm font-semibold text-white transition-colors hover:bg-white/10"
+            >
+              How much rent can I afford? →
+            </Link>
+          </div>
         </div>
       </section>
 

@@ -38,6 +38,12 @@ const tools = [
     description: "Photo-documented condition report, signed and dated.",
   },
   {
+    href: "/rent-affordability-calculator",
+    name: "Rent Affordability Calculator",
+    description:
+      "How much rent you can afford — and whether you'd pass a landlord's income screening.",
+  },
+  {
     href: "/rent-split-calculator",
     name: "Rent Split Calculator",
     description:

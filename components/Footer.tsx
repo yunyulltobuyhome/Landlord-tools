@@ -73,6 +73,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/rent-affordability-calculator" className="transition-colors hover:text-moss">
+                  Rent Affordability Calculator
+                </Link>
+              </li>
+              <li>
                 <Link
                   href="/security-deposit-demand-letter"
                   className="transition-colors hover:text-moss"
