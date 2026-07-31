@@ -3,16 +3,13 @@ import { SITE_URL } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
   return {
+    // Deliberately kept minimal. A wildcard Disallow was tried here to hide
+    // Next.js RSC .txt payloads (5 "duplicate page" reports in Search
+    // Console), but that is a trivial gain and robots.txt is the single
+    // riskiest file to experiment with while traffic is already at zero.
     rules: {
       userAgent: "*",
-      // Next.js static export emits an RSC payload as <route>.txt beside every
-      // <route>.html. Those payloads repeat the page's text but carry no
-      // canonical tag, so crawling them produces "duplicate page without a
-      // user-selected canonical" in Search Console. Block them — but keep
-      // ads.txt crawlable for AdSense (the longer, more specific Allow rule
-      // wins over the wildcard Disallow).
-      allow: ["/", "/ads.txt"],
-      disallow: "/*.txt$",
+      allow: "/",
     },
     sitemap: `${SITE_URL}/sitemap.xml`,
   };
