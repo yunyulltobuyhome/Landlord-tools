@@ -5,7 +5,8 @@ import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
-    { url: `${SITE_URL}/`, changeFrequency: "monthly", priority: 1 },
+    // No trailing slash, to match the homepage's canonical tag exactly.
+    { url: SITE_URL, changeFrequency: "monthly", priority: 1 },
     {
       url: `${SITE_URL}/move-out-packet`,
       changeFrequency: "monthly",
