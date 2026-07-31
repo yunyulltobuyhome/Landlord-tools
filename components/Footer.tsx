@@ -161,6 +161,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/all-pages" className="transition-colors hover:text-moss">
+                  All Pages
+                </Link>
+              </li>
+              <li>
                 <CookieSettingsLink className="transition-colors hover:text-moss" />
               </li>
             </ul>

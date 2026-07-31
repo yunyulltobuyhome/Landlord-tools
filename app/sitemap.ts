@@ -63,6 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     { url: `${SITE_URL}/tools`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${SITE_URL}/all-pages`, changeFrequency: "weekly", priority: 0.6 },
     { url: `${SITE_URL}/state`, changeFrequency: "monthly", priority: 0.8 },
     {
       url: `${SITE_URL}/can-a-landlord-charge-for`,
