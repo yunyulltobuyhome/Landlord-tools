@@ -4,7 +4,7 @@ import { toolJsonLd } from "@/lib/tool-schema";
 import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
-  title: "Security Deposit Deduction Letter Generator",
+  title: "Itemized Security Deposit Deduction Letter Generator",
   description:
     "Create a free itemized security deposit deduction statement and download it as a PDF — built to match state notice requirements after a tenant moves out.",
   alternates: { canonical: "/deduction-letter" },

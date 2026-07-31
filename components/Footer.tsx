@@ -68,16 +68,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/rent-split-calculator" className="transition-colors hover:text-moss">
-                  Rent Split Calculator
-                </Link>
-              </li>
-              <li>
-                <Link href="/rent-affordability-calculator" className="transition-colors hover:text-moss">
-                  Rent Affordability Calculator
-                </Link>
-              </li>
-              <li>
                 <Link
                   href="/security-deposit-demand-letter"
                   className="transition-colors hover:text-moss"
@@ -153,16 +143,6 @@ export default function Footer() {
               <li>
                 <Link href="/terms" className="transition-colors hover:text-moss">
                   Terms of Service
-                </Link>
-              </li>
-              <li>
-                <Link href="/disclaimer" className="transition-colors hover:text-moss">
-                  Legal Disclaimer
-                </Link>
-              </li>
-              <li>
-                <Link href="/all-pages" className="transition-colors hover:text-moss">
-                  All Pages
                 </Link>
               </li>
               <li>

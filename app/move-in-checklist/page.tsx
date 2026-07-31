@@ -4,7 +4,7 @@ import { toolJsonLd } from "@/lib/tool-schema";
 import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
-  title: "Move-In / Move-Out Checklist with Photos",
+  title: "Move-In / Move-Out Condition Checklist with Photos",
   description:
     "Free move-in and move-out condition checklist with photo attachments — document each room, embed pictures, and download a signed PDF report. No signup; photos stay on your device.",
   alternates: { canonical: "/move-in-checklist" },

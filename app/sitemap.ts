@@ -4,9 +4,10 @@ import { deductionsData } from "@/lib/deductions-data";
 import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const lastModified = new Date();
+
   const staticRoutes: MetadataRoute.Sitemap = [
-    // No trailing slash, to match the homepage's canonical tag exactly.
-    { url: SITE_URL, changeFrequency: "monthly", priority: 1 },
+    { url: `${SITE_URL}/`, changeFrequency: "monthly", priority: 1 },
     {
       url: `${SITE_URL}/move-out-packet`,
       changeFrequency: "monthly",
@@ -49,22 +50,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
-      url: `${SITE_URL}/rent-split-calculator`,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${SITE_URL}/rent-affordability-calculator`,
-      changeFrequency: "monthly",
-      priority: 0.95,
-    },
-    {
       url: `${SITE_URL}/security-deposit-demand-letter`,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     { url: `${SITE_URL}/tools`, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${SITE_URL}/all-pages`, changeFrequency: "weekly", priority: 0.6 },
     { url: `${SITE_URL}/state`, changeFrequency: "monthly", priority: 0.8 },
     {
       url: `${SITE_URL}/can-a-landlord-charge-for`,
@@ -76,7 +66,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/privacy`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${SITE_URL}/cookies`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${SITE_URL}/terms`, changeFrequency: "yearly", priority: 0.3 },
-    { url: `${SITE_URL}/disclaimer`, changeFrequency: "yearly", priority: 0.3 },
   ];
 
   const stateRoutes: MetadataRoute.Sitemap = statesData.map((s) => ({
@@ -91,8 +80,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  // Deliberately no lastmod: stamping every URL with the build time on each
-  // deploy would claim all pages changed every time, and Google ignores
-  // lastmod entirely once it looks unreliable. Better to omit it than to lie.
-  return [...staticRoutes, ...stateRoutes, ...deductionRoutes];
+  // Stamp every entry with a lastmod so crawlers get a freshness signal.
+  return [...staticRoutes, ...stateRoutes, ...deductionRoutes].map((r) => ({
+    ...r,
+    lastModified,
+  }));
 }
