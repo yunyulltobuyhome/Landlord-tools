@@ -38,6 +38,12 @@ const tools = [
     description: "Photo-documented condition report, signed and dated.",
   },
   {
+    href: "/rent-increase-calculator",
+    name: "Rent Increase Calculator",
+    description:
+      "New rent after an increase, your state's cap, and the notice required.",
+  },
+  {
     href: "/prorated-rent-calculator",
     name: "Prorated Rent Calculator",
     description: "Exact rent for a partial first or last month.",

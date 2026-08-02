@@ -48,6 +48,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/rent-increase-calculator" className="transition-colors hover:text-moss">
+                  Rent Increase Calculator
+                </Link>
+              </li>
+              <li>
                 <Link href="/prorated-rent-calculator" className="transition-colors hover:text-moss">
                   Prorated Rent Calculator
                 </Link>
