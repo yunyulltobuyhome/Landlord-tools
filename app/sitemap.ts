@@ -59,6 +59,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.95,
     },
+    {
+      url: `${SITE_URL}/rental-expense-tracker`,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
     { url: `${SITE_URL}/tools`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${SITE_URL}/state`, changeFrequency: "monthly", priority: 0.8 },
     {

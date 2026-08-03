@@ -68,6 +68,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/rental-expense-tracker" className="transition-colors hover:text-moss">
+                  Rental Expense Tracker
+                </Link>
+              </li>
+              <li>
                 <Link href="/rent-ledger" className="transition-colors hover:text-moss">
                   Rent Ledger &amp; Tracker
                 </Link>

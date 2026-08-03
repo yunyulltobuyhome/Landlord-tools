@@ -59,6 +59,12 @@ const tools = [
     description: "A clean, dated PDF receipt for any rent payment.",
   },
   {
+    href: "/rental-expense-tracker",
+    name: "Rental Expense Tracker",
+    description:
+      "Log expenses by IRS Schedule E line and export a PDF for your accountant.",
+  },
+  {
     href: "/rent-ledger",
     name: "Rent Ledger & Payment Tracker",
     description: "Log every payment and export a PDF ledger. No signup.",
